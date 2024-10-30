@@ -42,7 +42,7 @@
 
 ***
 
-## Special thanks
+## Special Thanks
 
 > We would like to thank the following authors for their contributions, in no particular order.
 
