@@ -53,9 +53,9 @@
    
 3. 我们的反馈通道：
    
-   - 邮箱：`yule-best@outlook.com`
-   - QQ：`1011567690`
-   - Telegram：[YuleBestFree](t.me/YuleBestFree)
+- 邮箱：`yule-best@outlook.com`
+- QQ：`1011567690`
+- Telegram：[YuleBestFree](t.me/YuleBestFree)
 
 ***
 
