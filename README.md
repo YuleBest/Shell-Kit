@@ -14,11 +14,14 @@
 
 ## 我们支持的设备
 
-> 满足以下全部条件的可以体验当前版本的 Shell 工具箱
+> 满足以下**全部**条件的可以体验当前版本的 Shell 工具箱
 
 - 支持基本的 Shell 环境
+  
 - 使用 ARM 64 架构的处理器（后续会适配更多）
+  
   > 你可以在终端执行 `uname -m` 来获取你的处理器架构，若返回值为 `aarch64` 即为 ARM64 架构
+  
 - 拥有 SU 权限 (Root)
 
 ---
@@ -52,19 +55,21 @@
    
 2. 反馈格式：
    
-> 「功能ID」+ 问题 (bug) + 联系方式
+  > 「功能ID」+ 问题 (bug) + 联系方式
    
 3. 我们的反馈通道：
    
 - 邮箱：`yule-best@outlook.com`
+  
 - QQ：`1011567690`
-- Telegram：[YuleBestFree](t.me/YuleBestFree)
+  
+- Telegram：[YuleBestFree](https://t.me/YuleBestFree)
 
 ---
 
 ## 特别鸣谢
 
-> 感谢以下作者的付出，排名不分次序
+感谢以下作者的付出，排名不分次序
 
 [于乐 Yule - Github](https://github.com/YuleBest)
 
