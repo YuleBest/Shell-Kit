@@ -15,7 +15,7 @@
 
 # Support
 
-> Those who meet all the following conditions can experience the current version of the Shell toolbox:
+> Those who meet all the following conditions can experience the current version of the Shell Kit:
 
 - Support for a basic Shell environment
 - Use of an ARM 64 architecture processor (more will be supported in the future)
@@ -47,6 +47,7 @@
 ## Issue Feedback
 
 1. Please make sure to attach screenshots that illustrate the issue.
+
 2. Feedback format:
 
 > "Feature ID" + Issue (bug) + Contact Information
