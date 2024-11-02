@@ -1,7 +1,8 @@
 <div align="center">
 
 # Shell 工具箱
-[中文](https://github.com/YuleBest/ShellTool/blob/main/README.md)    [English](https://github.com/YuleBest/ShellTool/blob/main/README_EN.md)
+
+[中文](https://github.com/YuleBest/ShellTool/blob/main/README.md)  ｜  [English](https://github.com/YuleBest/ShellTool/blob/main/README_EN.md)
 
 </div>
 
@@ -10,6 +11,14 @@
 > 未经授权的情况下，请勿将本项目用于商业用途，转载使用请标明出处
 
 ***
+
+## 我们支持的设备
+
+> 满足以下基本条件的可以体验当前版本的 Shell 工具箱
+
+- 支持基本的 Shell 环境
+- 使用 ARM 64 架构的处理器（后续会适配更多）
+- 拥有 SU 权限 (Root)
 
 ## 功能列表
 
