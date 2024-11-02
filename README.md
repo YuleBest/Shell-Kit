@@ -46,12 +46,16 @@
 ## 问题反馈
 
 1. 请务必附带能够体现问题的截图
+   
 2. 反馈格式：
+   
    > 「功能ID」+ 问题 (bug) + 联系方式
+   
 3. 我们的反馈通道：
-   > 邮箱：`yule-best@outlook.com`
-   > QQ：`1011567690`
-   > Telegram：[YuleBestFree](t.me/YuleBestFree)
+   
+   - 邮箱：`yule-best@outlook.com`
+   - QQ：`1011567690`
+   - Telegram：[YuleBestFree](t.me/YuleBestFree)
 
 ***
 
