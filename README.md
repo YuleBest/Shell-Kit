@@ -1,11 +1,13 @@
+<div align="center">
+
 # Shell 工具箱
 [中文](https://github.com/YuleBest/ShellTool/blob/main/README.md)    [English](https://github.com/YuleBest/ShellTool/blob/main/README_EN.md)
 
-> 使用本项目所产生的任何后果由使用者自行承担
-> 在使用本项目之前，请确保您已充分了解相关法律法规
-> 确保您的行为符合所在国家或地区的法律要求
-> 未经授权的情况下，请勿将本项目用于商业用途
-> 转载使用请标明出处
+</div>
+
+> 使用本项目所产生的任何后果由使用者自行承担，在使用本项目之前，请确保您已充分了解相关法律法规，确保您的行为符合所在国家或地区的法律要求
+
+> 未经授权的情况下，请勿将本项目用于商业用途，转载使用请标明出处
 
 ***
 
