@@ -1,7 +1,7 @@
 <div align="center">
 
 # Shell Kit
-[中文](https://github.com/YuleBest/ShellTool/blob/main/README.md)  ｜  [English](https://github.com/YuleBest/ShellTool/blob/main/README_EN.md)
+[中文](https://github.com/YuleBest/ShellTool/blob/main/README.md)  Ⅰ  English
 
 </div>
 
