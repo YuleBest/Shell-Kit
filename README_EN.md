@@ -57,7 +57,7 @@
 
 2. Feedback format:
 
-> "Feature ID" + Issue (bug) + Contact Information
+  > "Feature ID" + Issue (bug) + Contact Information
 
 3. Our feedback channels:
 
@@ -69,7 +69,7 @@
 
 ## Special Thanks
 
-> We would like to thank the following authors for their contributions, in no particular order.
+We would like to thank the following authors for their contributions, in no particular order.
 
 [于乐 Yule - Github](https://github.com/YuleBest)
 
