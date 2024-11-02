@@ -13,6 +13,14 @@
 
 ***
 
+# Support
+
+> Those who meet all the following conditions can experience the current version of the Shell toolbox:
+
+- Support for a basic Shell environment
+- Use of an ARM 64 architecture processor (more will be supported in the future)
+- Possession of SU permissions (Root)
+
 ## Function List
 
 ### 1. System Optimization
@@ -36,13 +44,18 @@
 
 ***
 
-## Problem Feedback
+## Issue Feedback
 
-1. Please be sure to bring a screenshot that shows the problem.
-
+1. Please make sure to attach screenshots that illustrate the issue.
 2. Feedback format:
 
-   > "Feature ID" + Problem (bug) + Contact information
+> "Feature ID" + Issue (bug) + Contact Information
+
+3. Our feedback channels:
+
+- Email: `yule-best@outlook.com`
+- QQ: `1011567690`
+- Telegram: [YuleBestFree](https://t.me/YuleBestFree)
 
 ***
 
