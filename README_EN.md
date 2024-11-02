@@ -1,5 +1,9 @@
-# Shell Tool
+<div align="center">
+
+# Shell Kit
 [中文](https://github.com/YuleBest/ShellTool/blob/main/README.md)    [English](https://github.com/YuleBest/ShellTool/blob/main/README_EN.md)
+
+</div>
 
 > Any consequences arising from the use of this program shall be borne by the user.
 > Ensure that you are fully aware of the relevant laws and regulations before using this program.
