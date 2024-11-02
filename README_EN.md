@@ -19,6 +19,7 @@
 
 - Support for a basic Shell environment
 - Use of an ARM 64 architecture processor (more will be supported in the future)
+  > You can run `uname -m` in the terminal to get your processor architecture, and if the return value is `aarch64`, it is the ARM64 architecture.
 - Possession of SU permissions (Root)
 
 ## Function List
