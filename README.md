@@ -2,7 +2,7 @@
 
 # Shell 工具箱
 
-中文  Ⅰ  [English](https://github.com/YuleBest/ShellTool/blob/main/README_EN.md)
+中文简体  Ⅰ  [English](https://github.com/YuleBest/ShellTool/blob/main/README_EN.md)
 
 </div>
 
