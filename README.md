@@ -26,28 +26,37 @@
 
 ---
 
-## 功能列表
+## 快速上手
 
-### 1. 系统优化
+1. 在本项目的 [Releases](https://github.com/YuleBest/Shell-Kit/releases) 页面获取 Shell 工具箱的发行版，你会得到一个 `.zip` 压缩包
+
+2. 将压缩包内的所有文件解压到**同一目录**
+
+   ```shell
+   unzip -n Shell工具箱.zip -d /data/local/tmp
+   ```
+
+3. 运行 `Shell工具箱-R-X.sh`
+
+   > 我们推荐你使用 MT 管理器的「系统环境」进行，需要授权 Root
+
+   初次运行时，系统会提示是否允许在固定目录下生成必要文件，若不允许，Shell 工具箱将无法运行
+
+---
+
+## 当前功能列表（R-1）
+
+### 一. 系统优化
 
 | ID   | 标识号 | 加入的版本 | 作者 | 功能  |
 | ---- | ------ | ---- | ---- | ----- |
-| 1    | XFZT | 1.0 | [Yule](https://github.com/YuleBest) | 修复字体模块于 Android 15 系统上失效 |
-| 2    | PLAZ | 1.0 | [Yule](https://github.com/YuleBest) | 批量安装指定目录下的 APK 安装包 |
-| 3    | ZCZY | 1.0 | [Yule](https://github.com/YuleBest) | 找出占用空间达到某个值的文件 |
-| 4    | TQSJ | 1.0 | [Yule](https://github.com/YuleBest)     | 提取手机系统分区镜像文件 |
-| 5    | BFZK | 1.0 | [Yule](https://github.com/YuleBest)     | 备份字库 (可自定义排除) |
-| 6    | SZKR | 1.0 | [Yule](https://github.com/YuleBest)     | 设置 SeLinux |
-| 7    | HCZY | 1.0 | [Yule](https://github.com/YuleBest)     | 将某个应用的缓存/下载的文件复制一份 |
+| 1    | XFZT | R-1 | [Yule](https://github.com/YuleBest) | 修复字体模块于 Android 15 系统上失效 |
+| 2    | PLAZ | R-1 | [Yule](https://github.com/YuleBest) | 批量安装指定目录下的 APK 安装包 |
+| 3    | ZCZY | R-1 | [Yule](https://github.com/YuleBest) | 找出占用空间达到某个值的文件 |
+| 4    | TQSJ | R-1 | [Yule](https://github.com/YuleBest)     | 提取手机系统分区镜像文件 |
+| 5    | BFZK | R-1 | [Yule](https://github.com/YuleBest)     | 备份字库 (可自定义排除) |
 
-### X. 关于本工具
-
-| ID   | 功能         |
-| ---- | ------------ |
-| cx   | 错误码查询   |
-| yx   | 查看运行信息 |
-
-***
+---
 
 ## 问题反馈
 
@@ -56,7 +65,7 @@
 2. 反馈格式：
    
   > 「功能ID」+ 问题 (bug) + 联系方式
-   
+
 3. 我们的反馈通道：
    
 - 邮箱：`yule-best@outlook.com`
