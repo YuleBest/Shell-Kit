@@ -12,7 +12,10 @@
 > Ensure that your behavior complies with the legal requirements of your country or region.
 
 > Do not use this program for commercial purposes without authorization.
+
 > Please cite the source for reproduction
+
+> **Sorry, we ONLY support Simplified Chinese in the current version, we will support English in the next version (R-2).**
 
 ***
 
@@ -28,9 +31,31 @@
   
 - Possession of SU permissions (Root)
 
+---
+
+## Quick Start
+
+1. Get the Shell kit distribution from the [Releases](https://github.com/YuleBest/Shell-Kit/releases) page of this project, you will get a `.zip` archive.
+
+2. Extract all the files in the zip to **the same directory**
+
+   unzip -n Shell Toolkit
+   unzip -n Shell Toolkit.zip -d /data/local/tmp
+   ```
+
+3. Run `Shell kit-R-X.sh`
+
+   > We recommend that you use the MT Manager's “System Environment” to do this, and authorization for Root is required.
+
+   When you run it for the first time, you will be prompted to allow the necessary files to be generated in a fixed directory, if not, the Shell Toolkit will not run.
+
+---
+
+Translated with DeepL.com (free version)
+
 ## Function List
 
-### 1. System Optimization
+### I. System Optimization
 
 | ID   | 标识号 | 加入的版本 | 作者 | 功能  |
 | ---- | ------ | ---- | ---- | ----- |
@@ -39,15 +64,6 @@
 | 3    | ZCZY | 1.0 | [Yule](https://github.com/YuleBest) | 找出占用空间达到某个值的文件 |
 | 4    | TQSJ | 1.0 | [Yule](https://github.com/YuleBest)     | 提取手机系统分区镜像文件 |
 | 5    | BFZK | 1.0 | [Yule](https://github.com/YuleBest)     | 备份字库 (可自定义排除) |
-| 6    | SZKR | 1.0 | [Yule](https://github.com/YuleBest)     | 设置 SeLinux |
-| 7    | HCZY | 1.0 | [Yule](https://github.com/YuleBest)     | 将某个应用的缓存/下载的文件复制一份 |
-
-### X. About This Tool
-
-| ID   | 功能         |
-| ---- | ------------ |
-| cx   | 错误码查询   |
-| yx   | 查看运行信息 |
 
 ***
 
