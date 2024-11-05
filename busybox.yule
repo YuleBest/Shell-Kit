@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# 检查 BusyBox 是否存在
+cd ./Tools
+echo "$PWD"
+
+# 复制到 /data/local/tmp
+cp ${PWD}/busybox /data/local/tmp/
+BUSYBOX_PATH="/data/local/tmp/busybox"
+
+# 设置权限
+chmod 777 ${BUSYBOX_PATH}
+
+# 获取支持的工具列表
+export PATH=/data/local/tmp:$PATH
+TOOLS=$(busybox --list)
+
+# 目标目录
+TARGET_DIR="/data/YuleBusyBox"
+mkdir $TARGET_DIR
+
+# 创建软链接
+for TOOL in $TOOLS; do
+  if [ ! -e "${TARGET_DIR}/${TOOL}" ]; then
+    ln -s "$BUSYBOX_PATH" "${TARGET_DIR}/${TOOL}"
+    echo "创建软链接: ${TOOL} -> busybox"
+  fi
+done
+cp "$BUSYBOX_PATH" "${TARGET_DIR}/"
+echo "复制: ${BUSYBOX_PATH} COPY -> ${TARGET_DIR}/"
+
+# 删除临时文件
+rm -f $BUSYBOX_PATH
+echo "删除: ${BUSYBOX_PATH}"
+echo "BusyBox 环境配置完毕"
+
+# 复制 zip
+cp ./zip ${TARGET_DIR}/
+echo "复制: zip COPY -> ${TARGET_DIR}/"
+chmod 777 ${TARGET_DIR}/zip
+echo "授权: 777 -> ${TARGET_DIR}/zip"
