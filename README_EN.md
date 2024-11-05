@@ -39,8 +39,8 @@
 
 2. Extract all the files in the zip to **the same directory**
 
-   unzip -n Shell Toolkit
-   unzip -n Shell Toolkit.zip -d /data/local/tmp
+   ```shell
+   unzip -n Shell工具箱.zip -d /data/local/tmp
    ```
 
 3. Run `Shell kit-R-X.sh`
