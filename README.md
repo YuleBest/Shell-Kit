@@ -44,7 +44,7 @@
 
 ---
 
-## (当前功能列表)[https://github.com/YuleBest/Shell-Kit/blob/main/info.json]
+## [当前功能列表](https://github.com/YuleBest/Shell-Kit/blob/main/info.json)
 
 ---
 
