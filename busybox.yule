@@ -18,6 +18,7 @@ TOOLS=$(busybox --list)
 # 目标目录
 TARGET_DIR="/data/YuleBusyBox"
 mkdir $TARGET_DIR
+mkdir $TARGET_DIR/tmp
 
 # 创建软链接
 for TOOL in $TOOLS; do
@@ -39,3 +40,15 @@ cp ./zip ${TARGET_DIR}/
 echo "复制: zip COPY -> ${TARGET_DIR}/"
 chmod 777 ${TARGET_DIR}/zip
 echo "授权: 777 -> ${TARGET_DIR}/zip"
+
+# 复制 jq
+cp ./jq ${TARGET_DIR}/
+echo "复制: jq COPY -> ${TARGET_DIR}/"
+chmod 777 ${TARGET_DIR}/jq
+echo "授权: 777 -> ${TARGET_DIR}/jq"
+
+# 复制 openssl
+cp ./openssl ${TARGET_DIR}/
+echo "复制: openssl COPY -> ${TARGET_DIR}/"
+chmod 777 ${TARGET_DIR}/openssl
+echo "授权: 777 -> ${TARGET_DIR}/openssl"

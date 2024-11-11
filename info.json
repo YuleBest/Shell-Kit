@@ -1,0 +1,65 @@
+{
+
+    "0": {
+        "version": "R-2",
+        "author": "于乐Yule",
+        "update": "更新 5 个功能，详见 https://github.com/YuleBest/Shell-Kit"
+    },
+    
+    "✨ 一": {
+        "title": "系统优化 ✨"
+    },    
+
+    "1": {
+        "title": "修复字体模块于 Android 15 系统上失效",
+        "author": "于乐Yule",
+        "version":"R-1"
+    },
+    
+    "2": {
+        "title": "找出占用空间达到某个值的文件",
+        "author": "于乐Yule",
+        "version":"R-1"
+    },
+    
+    "3": {
+        "title": "备份字库 (可自定义排除)",
+        "author": "于乐Yule",
+        "version":"R-1"
+    },
+    
+    "✨ 二": {
+        "title": "文件操作 ✨"
+    },    
+    
+    "11": {
+        "title": "提取手机系统分区镜像文件",
+        "author": "于乐Yule",
+        "version":"R-1"
+    },
+    
+    "12": {
+        "title": "刷入手机系统分区镜像文件",
+        "author": "于乐Yule",
+        "version":"R-2"
+    },
+    
+    "13": {
+        "title": "批量安装指定目录下的 APK 安装包",
+        "author": "于乐Yule",
+        "version":"R-1"
+    },
+    
+    "14": {
+        "title": "挂载/取消挂载虚拟 SD 卡",
+        "author": "于乐Yule",
+        "version":"R-2"
+    },
+    
+    "15": {
+        "title": "文件加密/解密 (使用openssl)",
+        "author": "于乐Yule",
+        "version": "R-2"
+    }
+    
+}

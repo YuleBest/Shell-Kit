@@ -1,80 +1,78 @@
-## [2] 批量安装指定目录下的 APK 安装包 (代号 PLAZ)
+## [2] 找出占用空间达到某个值的文件 (代号 ZCZY)
 
-PLAZ() {
+ZCZY() {
     fgx 7; blank 1
     say "欢迎使用"
-    saya "批量安装指定目录下的 APK 安装包"
+    saya "找出占用空间达到某个值的文件"
     say "作者: 于乐yule\n"
     fgx 7; blank 1
-
-    # 设置要安装APK的目录
-    says "请输入安装包所在目录完整路径"
-    read APK_DIR
+        
+    # 函数: 将GB转换成字节，并只保留整数部分
+    gb_to_bytes() {
+        echo "$1 * 1024 * 1024 * 1024 / 1" | bc
+    }
     
-    # 检查是否设置了正确的目录
-    if [ ! -d "$APK_DIR" ]; then
-      say "${RE}错误: 目录 $APK_DIR 不存在${RES}"
-      exit 1
-    fi    
+    # 函数: 将字节转换成MB/GB，支持浮点数
+    bytes_to_mb() {
+        echo "scale=2; $1 / 1024 / 1024" | bc
+    }
+    
+    bytes_to_gb() {
+        echo "scale=2; $1 / 1073741824" | bc
+    }
+    
+    
+    
+    # 显示菜单并获取用户的选择
+    says "请选择要搜索的目录:\n   1) 根目录 /\n   2) 内部储存 /storage/emulated/0/"
+    read choice
+    
+    # 根据用户的选择设置搜索路径
+    case $choice in
+        1)
+            search_path="/"
+            ;;
+        2)
+            search_path="/storage/emulated/0/"
+            ;;
+        *)
+            say "${RE}无效的选项。退出程序${RES} (W001)"
+            exit 1
+            ;;
+    esac
+    
     blank 1
     
-    # 遍历目录中所有的.apk文件，并列出其文件名和大小
-    for apk in "$APK_DIR"/*.apk; do
-      if [ -f "$apk" ]; then
-        # 获取文件名（不带路径）
-        filename=$(basename "$apk")
-        # 获取文件大小
-        size=$(du -m "$apk" | cut -f 1)
-        # 输出文件信息
-        say "${YE}$filename${RES} [${size} MB]"
-      fi
+    # 获取用户输入的大小(GB)，允许浮点数
+    says "请输入要查找的大于多少GB的文件:"
+    read size_gb
+    
+    blank 1; say "${CY}已开始搜索，根据手机性能大概需要等待 10 - 200 秒~${RES}"; blank 1; fgx 7; blank 1; stt a
+    
+    # 将GB转换为字节，并只保留整数部分
+    size_bytes=$(gb_to_bytes $size_gb)
+    size_bytes=${size_bytes%.*}  # 只保留整数部分
+    
+    sayb "大于 ${size_gb} GB 的文件: "
+    say "(1024 MB = 1 GB)"; blank 1
+    
+    # 查找大于指定大小的文件，并按照大小降序排列
+    find "$search_path" -type f -size +"$size_bytes"c -exec du -b {} + | sort -nr | while read line; do
+        # 提取文件大小和路径
+        file_size=$(echo $line | cut -f1)
+        file_path=$(echo $line | cut -d' ' -f2-)
+        file_name=$(basename "$file_path")
+        
+        # 转换文件大小为 MB/GB 并保留两位小数
+        file_size_mb=$(bytes_to_mb $file_size)
+        file_size_gb=$(bytes_to_gb $file_size)       
+        
+        # 输出文件大小(MB)和文件名
+        say "◆ ${CY}${file_size_mb} MB ($file_size_gb GB)${RES} - ${YE}${file_name}${RES}"
+        say "  ${file_path}"
     done
-    
-    # 确认是否继续安装
-    blank 1
-    say "↑ 以上是将要安装的所有APK文件的信息"
-    blank 1
-    says "y 继续安装 | n 取消"
-    read determine
-    if [[ $determine == "n" ]]; then
-        exit 0
-    elif [[ $determine == "y" ]]; then
-        sayb "开始安装..."
-    else
-        say "${RE}输入错误${RES} (W001)"
-        exit 1
-    fi
-    mkdir /data/local/tmp/APK_FILE
-    success=0; failure=0
-    
-    # 再次遍历并安装APK
-    stt 2
-    for apk in "$APK_DIR"/*.apk; do
-      if [ -f "$apk" ]; then
-        cp $apk /data/local/tmp/APK_FILE/$(basename $apk)
-        apk="/data/local/tmp/APK_FILE/$(basename $apk)"
-        chmod 777 $apk
-        say "${CY}开始安装 $(basename $apk)${RES}"
-        stt install
-        pm install -r "$apk"
-        ent install
-        # 检查安装结果
-        if [ $? -eq 0 ]; then
-          say "${GR}[$(pet install)S] 成功安装了 $(basename $apk)${RES}"
-          ((success++))
-        else
-          say "${RE}[$(pet install)S] 未能安装 $(basename $apk)${RES}"
-          ((failure++))
-        fi
-        rm -f $apk
-        blank 1
-      fi
-    done
-    rm -rf /data/local/tmp/APK_FILE/
-    ent 2; fgx 7
-    say "${GR}安装完毕，耗时 $(pet 2) 秒"
-    say "- 成功: ${GR}$success${RES}"
-    say "- 失败: ${RE}$failure${RES}"
+    ent a
+    echo "\n${YE}耗时: $(pet a)s"
 }
 
-PLAZ
+ZCZY
