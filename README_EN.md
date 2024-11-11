@@ -15,7 +15,7 @@
 
 > Please cite the source for reproduction
 
-> **Sorry, we ONLY support Simplified Chinese in the current version, we will support English in the next version (R-2).**
+> **Sorry, we ONLY support Simplified Chinese in the current version, we will support English in the next version.**
 
 ***
 
