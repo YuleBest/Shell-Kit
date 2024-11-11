@@ -44,17 +44,7 @@
 
 ---
 
-## 当前功能列表（R-1）
-
-### 一. 系统优化
-
-| ID   | 标识号 | 加入的版本 | 作者 | 功能  |
-| ---- | ------ | ---- | ---- | ----- |
-| 1    | XFZT | R-1 | [Yule](https://github.com/YuleBest) | 修复字体模块于 Android 15 系统上失效 |
-| 2    | PLAZ | R-1 | [Yule](https://github.com/YuleBest) | 批量安装指定目录下的 APK 安装包 |
-| 3    | ZCZY | R-1 | [Yule](https://github.com/YuleBest) | 找出占用空间达到某个值的文件 |
-| 4    | TQSJ | R-1 | [Yule](https://github.com/YuleBest)     | 提取手机系统分区镜像文件 |
-| 5    | BFZK | R-1 | [Yule](https://github.com/YuleBest)     | 备份字库 (可自定义排除) |
+## (当前功能列表)[https://github.com/YuleBest/Shell-Kit/blob/main/info.json]
 
 ---
 
