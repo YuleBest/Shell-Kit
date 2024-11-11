@@ -51,19 +51,7 @@
 
 ---
 
-Translated with DeepL.com (free version)
-
-## Function List
-
-### I. System Optimization
-
-| ID   | 标识号 | 加入的版本 | 作者 | 功能  |
-| ---- | ------ | ---- | ---- | ----- |
-| 1    | XFZT | 1.0 | [Yule](https://github.com/YuleBest) | 修复字体模块于 Android 15 系统上失效 |
-| 2    | PLAZ | 1.0 | [Yule](https://github.com/YuleBest) | 批量安装指定目录下的 APK 安装包 |
-| 3    | ZCZY | 1.0 | [Yule](https://github.com/YuleBest) | 找出占用空间达到某个值的文件 |
-| 4    | TQSJ | 1.0 | [Yule](https://github.com/YuleBest)     | 提取手机系统分区镜像文件 |
-| 5    | BFZK | 1.0 | [Yule](https://github.com/YuleBest)     | 备份字库 (可自定义排除) |
+## [Function List](https://github.com/YuleBest/Shell-Kit/blob/main/info.json)
 
 ***
 
